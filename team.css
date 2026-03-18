@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color:  #f9f9f9;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+  justify-content: stretch;
+}
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+  margin-top: 30px;
+}
+h1 {
+  width: 100%;
+  padding: 80px;
+  text-align: center;
+  font-size: 3.5em;
+  color: #171717;
+}
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.2);
+  padding: 3.5em 1em;
+  border-radius: 2em;
+  color: #171717;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+.card:hover {
+  background: linear-gradient(#0e0e0f, #c7c6ca);
+  color: #ffffff;
+}
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.5em;
+    padding: 1em;
+  }
+
+  .row {
+    padding: 1em;
+  }
+
+  .card {
+    padding: 2em 1em;
+  }
+
+  .column {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 15px;
+  }
+}
+
+/* For small desktops and larger tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .row {
+    padding: 1em;
+  }
+
+  .card {
+    padding: 3em 1em;
+  }
+
+  .column {
+    width: 50%;
+    padding: 1em;
+    margin-top: 20px;
+  }
+}
+
+/* For large desktops and screens */
+@media screen and (min-width: 992px) {
+  .row {
+    padding: 1em 7em;
+  }
+
+  .card {
+    padding: 5em 1em;
+  }
+
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+}
