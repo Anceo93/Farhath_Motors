@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contact-details {
+    max-width: 600px;
+    margin: 0 auto 80px; /* Center align horizontally and add bottom margin */
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-details h1 {
+    font-size: 2.5rem; /* Responsive font size */
+    color: #db3939;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0 auto; /* Center align */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-details ul p {
+    margin: 0;
+    font-size: 1rem; /* Responsive font size */
+}
+
+.contact-details b {
+    color: #db3939;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Center align horizontally */
+    padding: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 40px #67656569;
+}
+
+h4 {
+    text-align: center;
+    font-size: 2rem; /* Responsive font size */
+    margin: 20px 0;
+    color: #db3939;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 1rem; /* Responsive font size */
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px auto 0; /* Center align */
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(270deg, #f53939, #4CAF50);
+    color: #fff;
+    font-size: 1rem; /* Responsive font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #4CAF50;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-details {
+        padding: 20px;
+    }
+
+    .contact-details h1 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    input[type="submit"] {
+        width: 80px; /* Adjust submit button width */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-details {
+        padding: 15px;
+    }
+
+    .contact-details h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="submit"] {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+
+    input[type="submit"] {
+        width: 70px; /* Adjust submit button width */
+    }
+}

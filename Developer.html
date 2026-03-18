@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon">
+    <title>Developer Profile | Farhath Motors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="profile-section">
+        <div class="profile-card">
+            <div class="img-container">
+                <img src="assets/Teamassets/ceo1.png" alt="Developer Name">
+            </div>
+            <div class="profile-details">
+                <h1>Anojan <span style="color:  #a993ff;">Ilanthrayen</span><span>.</span></h1>
+                <p>FRONTEND DEVELOPER & SOFTWARE ENGINEER</p>
+                <p>Specializing in web development, UI/UX design, and performance optimization.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/anojanceo/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Anceo93" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/anojan_ceo_93/" target="_blank" title="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<style>
+
+    /* Global resets and base styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #777373;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+h1{
+    padding-top: 20px;
+}
+.profile-card {
+  background-image: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  max-width: 400px;
+  text-align: center;
+  padding: 2em;
+}
+
+.img-container {
+  width: 270px;
+  height: 270px;
+  margin: 0 auto 1em auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #a993ff; /* Background color in case the image doesn't load */
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-details h1 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.profile-details p {
+  color: #ffffff;
+  margin-bottom: 2em;
+  font-weight: 200;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.social-icons a {
+  color: #bb2a2a;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #a993ff; /* Change color on hover */
+}
+
+@media screen and (max-width: 576px) {
+  .profile-card {
+    padding: 1.5em;
+    max-width: 90%; /* Allow more width on small screens */
+  }
+
+  .img-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-details h1 {
+    font-size: 1.5em;
+  }
+
+  .profile-details p {
+    font-size: 0.9em;
+  }
+
+  .social-icons a {
+    font-size: 1.2em;
+  }
+}
+
+/* For medium screens (tablets) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .profile-card {
+    padding: 2em;
+    max-width: 80%; /* Adjust width for medium screens */
+  }
+
+  .img-container {
+    width: 110px;
+    height: 110px;
+  }
+
+  .profile-details h1 {
+    font-size: 1.6em;
+  }
+
+  .profile-details p {
+    font-size: 1em;
+  }
+
+  .social-icons a {
+    font-size: 1.4em;
+  }
+}
+
+/* For larger screens (desktops) */
+@media screen and (min-width: 769px) {
+  .profile-card {
+    padding: 2em;
+    max-width: 400px; /* Default max-width for large screens */
+  }
+
+  .img-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-details h1 {
+    font-size: 1.8em;
+  }
+
+  .profile-details p {
+    font-size: 1em;
+  }
+
+  .social-icons a {
+    font-size: 1.5em;
+  }
+}
+
+
+</style>
+</html>
